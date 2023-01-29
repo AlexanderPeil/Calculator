@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <script src="script.js"></script>
+    <title>Taschenrechner</title>
+</head>
+<body>
+    <div id="result-area">
+        
+    </div>
+
+    <table>
+        <tr>
+            <td onclick="openBrick()">(</td>
+            <td onclick="closeBrick()">)</td>
+            <td onclick="deleteResultField()">C</td>
+            <td onclick="deleteOne()" id="delete-one"><img src="img/del-one.png"></td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(7)">7</td>
+            <td onclick="appendOperation(8)">8</td>
+            <td onclick="appendOperation(9)">9</td>
+            <td onclick="appendOperation(' / ')" class="highlight">/</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(4)">4</td>
+            <td onclick="appendOperation(5)">5</td>
+            <td onclick="appendOperation(6)">6</td>
+            <td onclick="appendOperation(' * ')" class="highlight">x</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(1)">1</td>
+            <td onclick="appendOperation(2)">2</td>
+            <td onclick="appendOperation(3)">3</td>
+            <td onclick="appendOperation(' + ')" class="highlight">+</td>
+        </tr>
+
+        <tr>
+            <td onclick="appendOperation(0)">0</td>
+            <td onclick="appendOperation('.')">,</td>
+            <td onclick="calculateResult()" id="result">=</td>
+            <td onclick="appendOperation(' - ')" class="highlight">-</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
